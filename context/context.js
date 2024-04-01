@@ -7,7 +7,7 @@ const pageContext = {
 }
 
 const globalContext = {
-    "title": "ONG - MASEO"
+    "tittle": "ONG - MASEO"
 }
 
 const getContext = (contextKey) => {

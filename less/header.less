@@ -1,0 +1,130 @@
+header {
+    padding: 0 1rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: @secundary-text-color;
+    border-bottom: 1px solid @primary-background-color;
+    input[type="checkbox"] {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        .line {
+            width: 100%;
+            height: 3px;
+            background-color: @secundary-background-color;
+            transition: all 0.3s ease-in-out;
+        }
+        @media (min-width:720px) {
+            display: none;
+        
+        }
+    }
+    .branding {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: @secundary-background-color;
+        text-decoration: none;
+        margin-left: 1rem;
+        text-align: center;
+        img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+        @media (min-width:720px) {
+            margin-left: 0;
+            margin-right: 2rem;
+        }
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: @secundary-text-color;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        z-index: 100;
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0;
+            margin: 0;
+            width:100%;
+            list-style: none;
+            li {
+                border-bottom: 1px solid @primary-background-color;
+                width:100%;
+                a {
+                    display: block;
+                    padding: 1rem;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    color: @secundary-background-color;
+                    text-decoration: none;
+                    transition: all 0.3s ease-in-out;
+                    a:hover {
+                        color: #e5e5e5;
+                        background-color: @secundary-background-color;
+                    }
+                    @media (min-width:720px) {
+                        display:inline-block;
+                        padding: 0.5rem 0.75rem;
+                    }
+                }
+                @media (min-width:720px) {
+                    border: none;
+                    width:auto;
+                }
+            }
+            @media (min-width:720px) {
+                flex-direction: row;
+                width:auto;
+            }
+        }
+        @media (min-width:720px) {
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            height: 100%;
+            min-width: 400px;
+        }
+
+    }
+    @media (min-width:720px) {
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+}
+
+header #check:checked~nav {
+    height: 100vh;
+}
+
+@media (min-width:720px) {
+    header nav ul li a:hover{
+        background-color: @secundary-text-color;
+        border-bottom: @secundary-background-color 2px solid;
+        color: @secundary-background-color;
+    }
+}
