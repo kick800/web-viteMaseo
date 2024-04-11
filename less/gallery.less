@@ -9,6 +9,8 @@
 @small-font-size: .813rem;
 
 @import url(less_gallery/cardsGallery.less);
+@import url(less_gallery/header.less);
+@import url(less_gallery/footer.less);
 
 * {
     box-sizing: border-box;
@@ -18,7 +20,7 @@
   
   body {
     font-family: @body-font;
-    background-color: @primary-background-color; /* style less*/
+    background-color: @body-color; /* style less*/
     color: @text-color;
   }
   
@@ -28,7 +30,13 @@
     height: auto;
   }
 
-
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
 
 /******** MEDIAS ********/
 /* small */
