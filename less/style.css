@@ -27,13 +27,14 @@
   background-color: #f9f9f9;
   color: #333;
   text-align: center;
+  margin-top: 1rem;
 }
 
 .statistics-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .statistic {
@@ -84,7 +85,7 @@
   text-align: center;
   grid-template-columns: 1fr 1fr;
   border-top: 1px solid #000;
-  column-gap: 0rem;
+  column-gap: 2rem;
   align-items: center;
   padding: 30px 70px;
   margin: 0 auto;
@@ -102,8 +103,13 @@
   text-align: center;
   column-gap: 0rem;
   align-items: center;
-  padding: 10px 10px;
+  padding: 10px 20px;
   margin: 10px 10px 70px;
+}
+
+.cardma p,
+.cardmatwo p {
+  margin-top: 12px;
 }
 
 .hero-panel-two {
